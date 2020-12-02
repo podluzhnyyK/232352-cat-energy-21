@@ -30,73 +30,60 @@
       </div>
     </header>
     <main>
-      <section class="banner-product">
-        <div class="banner-product__content">
-          <h1 class="banner-product__heading">Подбор программы</h1>
-          <h2 class="banner-product__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
-        </div>
+      <section class="page-heading">
+        <h1 class="page-heading__heading">Подбор программы</h1>
+        <p class="page-heading__slogan">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </section>
       <section class="form">
-        <form method="get">
+        <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
-            <div class="form__wrapper">
-              <div class="form__line">
-                <label class="form__label" for="name">Имя:*</label>
-                <input class="form__input" type="text" name="name" id="name"/>
-              </div>
-              <div class="form__line">
-                <label class="form__label" for="weight">Вес (кг):*</label>
-                <input class="form__input" type="text" name="weight" id="weight"/>
-              </div>
-              <div class="form__line">
-                <label class="form__label" for="age">Возраст (лет):</label>
-                <input class="form__input" type="text" name="age" id="age"/>
-              </div>
+            <div class="form__line">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__input" type="text" name="name" id="name"/>
+            </div>
+            <div class="form__line">
+              <label class="form__label" for="weight">Вес (кг):*</label>
+              <input class="form__input" type="text" name="weight" id="weight"/>
+            </div>
+            <div class="form__line">
+              <label class="form__label" for="age">Возраст (лет):</label>
+              <input class="form__input" type="text" name="age" id="age"/>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <div class="form__wrapper">
-              <input class="" type="radio" id="weight-loss" value="weight-loss" name="product-groups"
+            <input class="form__radio" type="radio" id="weight-loss" value="weight-loss" name="product-groups"
               checked />
-              <label class="" for="weight-loss">Похудение</label>
-              <input class="" type="radio" id="mass" value="mass" name="product-groups" />
-              <label class="" for="mass">Набор массы</label>
-              <input class="" type="radio" id="not-know" value="not-know" name="product-groups" />
-              <label class="" for="not-know">Не знаю (Нужен ваш совет)</label>
-            </div>
+              <label class="form__label" for="weight-loss">Похудение</label>
+              <input class="form__radio" type="radio" id="mass" value="mass" name="product-groups" />
+              <label class="form__label" for="mass">Набор массы</label>
+              <input class="form__radio" type="radio" id="not-know" value="not-know" name="product-groups" />
+              <label class="form__label" for="not-know">Не знаю (Нужен ваш совет)</label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <div class="form__wrapper">
-              <div class="form__line">
-                <label class="form__label form__label--email" for="email">E-mail:*</label>
-                <input class="form__input" type="email" name="email" id="email"/>
-              </div>
-              <div class="form__line">
-                <label class="form__label" for="phone">Телефон:*</label>
-                <input class="form__input form__input--phone" type="tel" name="phone" id="phone"/>
-              </div>
+            <div class="form__line">
+              <label class="form__label form__label--email" for="email">E-mail:*</label>
+              <input class="form__input" type="email" name="email" id="email"/>
+            </div>
+            <div class="form__line">
+              <label class="form__label" for="phone">Телефон:*</label>
+              <input class="form__input form__input--phone" type="tel" name="phone" id="phone"/>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Комментарий</legend>
-            <div class="form__wrapper">
-              <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
+            <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Комментарий</legend>
-            <div class="form__wrapper">
-              <input class="form__checkbox" type="checkbox" id="sugar" value="sugar" name="product-groups"
-                    checked />
-              <label class="form__label" for="sugar">Сахарозаменитель</label>
-              <input class="form__checkbox" type="checkbox" id="water" value="water" name="product-groups" />
-              <label class="form__label" for="water">Питьевая вода</label>
-              <input class="form__checkbox" type="checkbox" id="milk" value="milk" name="product-groups" />
-              <label class="form__label" for="milk">Молоко</label>
-              <input class="form__checkbox" type="checkbox" id="vitamin" value="vitamin" name="product-groups" />
-              <label class="form__label" for="vitamin">Витамины</label>
-            </div>
+            <input class="form__checkbox" type="checkbox" id="sugar" value="sugar" name="product-groups" checked />
+            <label class="form__label" for="sugar">Сахарозаменитель</label>
+            <input class="form__checkbox" type="checkbox" id="water" value="water" name="product-groups" />
+            <label class="form__label" for="water">Питьевая вода</label>
+            <input class="form__checkbox" type="checkbox" id="milk" value="milk" name="product-groups" />
+            <label class="form__label" for="milk">Молоко</label>
+            <input class="form__checkbox" type="checkbox" id="vitamin" value="vitamin" name="product-groups" />
+            <label class="form__label" for="vitamin">Витамины</label>
           </fieldset>
           <div class="form__wrapper form__button-box">
             <button class="form__button" name="submit">Отправить заявку</button>
