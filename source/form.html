@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="page-header__nav">
           <div class="page-header__nav-logo">
-            <a href="index.html" class="logo-icon">
-              <img class="logo-icon__image" src="https://via.placeholder.com/150x150" width="33" height="37" alt="Логотип" title="Логотип">
+            <a class="logo-icon">
+              <img class="logo-icon__image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип" title="Логотип">
             </a>
-            <a href="index.html" class="logo-text">
-              <img class="logo-text__image" src="https://via.placeholder.com/150x150" width="101" height="18" alt="Кэт энерджи" title="Кэт энерджи">
+            <a class="logo-text">
+              <img class="logo-text__image" src="img/footer-logo-2.svg" width="101" height="18" alt="Кэт энерджи" title="Кэт энерджи">
             </a>
             <div class="burger-nemu">
               <button class="burger-nemu__button">Открыть</button>
@@ -36,7 +37,7 @@
       </section>
       <section class="form">
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--thin-frame">
             <div class="form__line">
               <label class="form__label" for="name">Имя:*</label>
               <input class="form__input" type="text" name="name" id="name"/>
@@ -50,14 +51,14 @@
               <input class="form__input" type="text" name="age" id="age"/>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--thin-frame">
             <input class="form__radio" type="radio" id="weight-loss" value="weight-loss" name="product-groups"
               checked />
-              <label class="form__label" for="weight-loss">Похудение</label>
+              <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
               <input class="form__radio" type="radio" id="mass" value="mass" name="product-groups" />
-              <label class="form__label" for="mass">Набор массы</label>
+              <label class="form__label form__label--radio" for="mass">Набор массы</label>
               <input class="form__radio" type="radio" id="not-know" value="not-know" name="product-groups" />
-              <label class="form__label" for="not-know">Не знаю (Нужен ваш совет)</label>
+              <label class="form__label form__label--radio" for="not-know">Не знаю (Нужен ваш совет)</label>
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
@@ -77,13 +78,13 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend">Комментарий</legend>
             <input class="form__checkbox" type="checkbox" id="sugar" value="sugar" name="product-groups" checked />
-            <label class="form__label" for="sugar">Сахарозаменитель</label>
+            <label class="form__label form__label--checkbox" for="sugar">Сахарозаменитель</label>
             <input class="form__checkbox" type="checkbox" id="water" value="water" name="product-groups" />
-            <label class="form__label" for="water">Питьевая вода</label>
+            <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
             <input class="form__checkbox" type="checkbox" id="milk" value="milk" name="product-groups" />
-            <label class="form__label" for="milk">Молоко</label>
+            <label class="form__label form__label--checkbox" for="milk">Молоко</label>
             <input class="form__checkbox" type="checkbox" id="vitamin" value="vitamin" name="product-groups" />
-            <label class="form__label" for="vitamin">Витамины</label>
+            <label class="form__label form__label--checkbox" for="vitamin">Витамины</label>
           </fieldset>
           <div class="form__wrapper form__button-box">
             <button class="form__button" name="submit">Отправить заявку</button>
@@ -95,31 +96,31 @@
     <footer class="page-footer">
       <div class="footer-wrapper">
         <div class="address">
-          <p>Приглашаем к сотрудничеству дилеров!</p>
-          <p>ул. Большая
+          <p class="address__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__address">ул. Большая
             Конюшенная, д. 19/8
             Санкт-Петербург</p>
         </div>
         <div class="map"></div>
         <div class="social">
           <a class="logo-text">
-            <img class="logo-text__image" src="https://via.placeholder.com/150x150" width="101" height="18" alt="Кэт энерджи" title="Кэт энерджи">
+            <img class="logo-text__image" src="img/footer-logo-2.svg" width="101" height="18" alt="Кэт энерджи" title="Кэт энерджи">
           </a>
           <ul class="social__icon-list">
             <li class="social__icon-item">
-              <a href="#"><img src="https://via.placeholder.com/150x150" width="23" height="16" alt="Вконтакте" title="Вконтакте">Вконтакте</a>
+              <a href="#"><img src="img/icon-vkontakte.svg" width="23" height="16" alt="Вконтакте" title="Вконтакте">Вконтакте</a>
             </li>
             <li class="social__icon-item">
-              <a href="#"><img src="https://via.placeholder.com/150x150" width="22" height="22" alt="Фейсбук" title="Фейсбук">Фейсбук</a>
+              <a href="#"><img src="img/icon-facebook.svg" width="22" height="22" alt="Фейсбук" title="Фейсбук">Фейсбук</a>
             </li>
             <li class="social__icon-item">
-              <a href="#"><img src="https://via.placeholder.com/150x150" width="16" height="16" alt="Инстаграм" title="Инстаграм">Инстаграм</a>
+              <a href="#"><img src="img/icon-instagram.svg" width="16" height="16" alt="Инстаграм" title="Инстаграм">Инстаграм</a>
             </li>
           </ul>
           <div class="social__html-academy">
             <span class="social__html-text">HTML Academy</span>
             <a href="#">
-              <img class="social__html-icon" width="27" height="34" src="https://via.placeholder.com/150x150" alt="html-academy" title="html-academy">
+              <img class="social__html-icon" width="27" height="34" src="img/htmlacademy.svg" alt="html-academy" title="html-academy">
             </a>
           </div>
         </div>
