@@ -1,3 +1,8 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+}
+
 .address__invitation {
   color: var(--special-dark-grey-3);
   font-family: "Oswald", "Arial", sans-serif;
@@ -9,4 +14,14 @@
 .address__address {
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: 1439px) {
+  .address {
+    align-items: center;
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    background-color: var(--basic-grey);
+  }
 }

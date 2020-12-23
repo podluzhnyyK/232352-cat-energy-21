@@ -1,5 +1,13 @@
+.training-programs__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .training-programs__item {
   background-color: var(--basic-grey);
+  margin-bottom: 20px;
 
   &:first-child {
     background-image: url("../img/cat-back.svg");
@@ -28,4 +36,26 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: 767px) {
+  .training-programs__wrapper {
+    width: 708px;
+  }
+
+  .training-programs__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .training-programs__wrapper {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .training-programs__item {
+    max-width: 570px;
+  }
 }
