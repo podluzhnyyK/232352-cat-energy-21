@@ -1,8 +1,6 @@
 .training-programs__wrapper {
   width: 280px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .training-programs__item {
@@ -38,24 +36,29 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 767px) {
+@media (min-width: @tablet) {
   .training-programs__wrapper {
     width: 708px;
   }
 
   .training-programs__item {
     margin-bottom: 30px;
+    padding-right: 245px;
+    background-position: 639px 19px;
   }
 }
 
-@media (min-width: 1439px) {
+@media (min-width: @desktop) {
   .training-programs__wrapper {
     width: 1220px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .training-programs__item {
     max-width: 570px;
+    padding-right: 45px;
+    background-position: 1px 1px;
   }
 }

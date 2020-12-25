@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-@media (min-width: 767px) {
+@media (min-width: @tablet) {
   .page-header__wrapper {
     width: 708px;
   }
@@ -49,10 +49,15 @@
   .page-header__nav-list {
     display: flex;
   }
+
+  .burger-nemu {
+    display: none;
+  }
 }
 
-@media (min-width: 1439px) {
+@media (min-width: @desktop) {
   .page-header {
+    width: 100%;
     position: absolute;
     z-index: 1;
   }

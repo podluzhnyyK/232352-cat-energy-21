@@ -47,7 +47,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 767px) {
+@media (min-width: @tablet) {
   .example__wrapper {
     width: 708px;
   }
@@ -59,9 +59,13 @@
   }
 }
 
-@media (min-width: 1439px) {
+@media (min-width: @desktop) {
   .example__wrapper {
     width: 1220px;
     display: flex;
+  }
+
+  .example__box {
+    width: 30%;
   }
 }

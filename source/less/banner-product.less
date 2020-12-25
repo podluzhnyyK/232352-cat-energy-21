@@ -39,6 +39,10 @@
   }
 }
 
+.banner-product__content-desktop {
+  display: none;
+}
+
 .banner-product__heading {
   color: var(--basic-white);
   font-family: "Oswald", "Arial", sans-serif;
@@ -70,9 +74,11 @@
   text-transform: uppercase;
   position: relative;
   z-index: 2;
+  width: 280px;
+  margin: 0 auto;
 }
 
-@media (min-width: 767px) {
+@media (min-width: @tablet) {
   .banner-product__content {
     background-image: none;
     max-width: 440px;
@@ -81,6 +87,11 @@
     &::before {
       display: none;
     }
+  }
+
+  .banner-product__button {
+    width: 244px;
+    margin: 0;
   }
 
   .banner-product {
@@ -116,20 +127,34 @@
   }
 }
 
-@media (min-width: 1439px) {
+@media (min-width: @desktop) {
   .banner-product {
     max-width: 100%;
-    min-height: 796px;
+    min-height: 694px;
+    flex-direction: row;
+
+    &::before {
+      content: "";
+      left: 36%;
+    }
   }
 
   .banner-product__content {
+    padding-left: 80px;
+    max-width: 50%;
+    width: 50%;
+    min-height: 694px;
+  }
+
+  .banner-product__content-desktop {
+    display: block;
     position: relative;
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
-    max-width: 720px;
-    width: 720px;
+    background-size: cover;
+    max-width: 50%;
+    width: 50%;
     min-height: 694px;
-    margin-left: auto;
 
     &::before {
       content: "";
@@ -144,11 +169,10 @@
     }
   }
 
-  .banner-product__heading {
-    right: 632px;
-  }
-
-  .banner-product__slogan {
-    right: 632px;
+  .banner-product__button {
+    position: absolute;
+    position: absolute;
+    top: 259px;
+    left: 80px;
   }
 }
