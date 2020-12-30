@@ -2,22 +2,7 @@
   max-width: 320px;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 430px;
-
-  &::before {
-    content: "";
-    width: 280px;
-    height: 270px;
-    left: 0;
-    top: 165px;
-    position: absolute;
-    background-image: url("../img/index-can-mobile.png");
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
 }
 
 .banner-product__content {
@@ -65,6 +50,11 @@
   text-align: center;
 }
 
+.banner-product__img {
+  position: relative;
+  z-index: 1;
+}
+
 .banner-product__button {
   color: var(--basic-white);
   background-color: var(--basic-green);
@@ -89,6 +79,11 @@
     }
   }
 
+  .banner-product__img {
+    width: 709px;
+    height: 609px;
+  }
+
   .banner-product__button {
     width: 244px;
     margin: 0;
@@ -98,18 +93,6 @@
     max-width: 768px;
     min-height: 790px;
     justify-content: flex-start;
-
-    &::before {
-      content: "";
-      width: 709px;
-      height: 609px;
-      left: 0;
-      top: 165px;
-      position: absolute;
-      background-image: url("../img/index-can-tablet.png");
-      background-repeat: no-repeat;
-      z-index: 1;
-    }
   }
 
   .banner-product__heading {
@@ -130,32 +113,8 @@
 @media (min-width: @desktop) {
   .banner-product {
     max-width: 100%;
+    width: 100%;
     min-height: 694px;
-    flex-direction: row;
-
-    &::before {
-      content: "";
-      left: 36%;
-    }
-  }
-
-  .banner-product__content {
-    padding-left: 80px;
-    max-width: 50%;
-    width: 50%;
-    min-height: 694px;
-  }
-
-  .banner-product__content-desktop {
-    display: block;
-    position: relative;
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 50%;
-    width: 50%;
-    min-height: 694px;
-
     &::before {
       content: "";
       width: 100%;
@@ -163,10 +122,28 @@
       left: 0;
       top: 0;
       position: absolute;
-      background-color: rgba(104, 183, 56, 0.85);
-      z-index: 0;
+      background: rgb(104, 183, 56);
+      background: linear-gradient(
+        -90deg,
+        rgba(104, 183, 56, 0.85) 50%,
+        rgba(255, 255, 255, 0) 50%
+      );
+      z-index: 1;
       display: block;
     }
+  }
+
+  .banner-product__content {
+    display: block;
+    position: relative;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 658px;
+    min-height: 694px;
+    max-width: 1440px;
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .banner-product__button {
