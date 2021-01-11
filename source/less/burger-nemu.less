@@ -1,0 +1,30 @@
+.burger-nemu__button {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  background-color: var(--basic-white);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 0;
+    background-color: var(--basic-black);
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    left: 0;
+    background-color: var(--basic-black);
+    transform: rotate(-45deg);
+  }
+}

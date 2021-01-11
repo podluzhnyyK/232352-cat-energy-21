@@ -7,10 +7,43 @@
   display: flex;
   text-align: center;
   align-items: flex-end;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 80px;
+    height: 82px;
+    background-image: url("../img/icon-gift.svg");
+    left: 0;
+    top: 0;
+  }
 }
 
 .catalog-banner__text {
   color: var(--basic-white);
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet) {
+  .catalog-banner {
+    background-image: url("../img/gift-photo-tablet.jpg");
+    max-width: 100%;
+    min-height: 200px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .catalog-banner__text {
+    width: 343px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog-banner {
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/gift-photo-mobile.jpg");
+  }
 }

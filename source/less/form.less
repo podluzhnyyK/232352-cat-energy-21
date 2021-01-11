@@ -1,3 +1,19 @@
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__line {
+  display: flex;
+  align-items: center;
+}
+
 .form__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -15,6 +31,7 @@
 
 .form__input,
 .form__textarea {
+  width: 100%;
   color: var(--special-dark-grey);
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -23,18 +40,41 @@
 }
 
 .form__legend {
+  position: relative;
   color: var(--basic-black);
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
+  width: fit-content;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: var(--basic-white);
+    z-index: -1;
+  }
 }
 
-.form__fieldset {
-  border: 2px solid var(--basic-green);
+.form__fieldset:not(.form__fieldset--thin-frame) {
+  position: relative;
+  border: none;
 
-  &--thin-frame {
-    border: 1px solid var(--special-grey-3);
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 2px;
+    background-color: var(--basic-green);
+    top: 16px;
+    z-index: -2;
   }
+}
+
+.form__fieldset--thin-frame {
+  border: none;
+  border-bottom: 1px solid var(--special-grey-3);
 }
 
 .form__button {
@@ -49,4 +89,39 @@
 .form__text-button {
   color: var(--basic-black);
   line-height: 16px;
+}
+
+@media (min-width: @tablet) {
+  .form__wrapper {
+    width: 708px;
+  }
+
+  .form__crutch {
+    display: none;
+  }
+
+  .form__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop) {
+  .form__wrapper {
+    width: 1220px;
+  }
+
+  .form__list-item {
+    width: auto;
+  }
+
+  .form__fieldset-desktop {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .form__line-desktop {
+    display: flex;
+  }
 }

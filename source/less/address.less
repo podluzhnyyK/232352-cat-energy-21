@@ -1,6 +1,7 @@
 .address {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .address__invitation {
@@ -16,12 +17,37 @@
   line-height: 20px;
 }
 
+@media (min-width: @tablet) {
+  .address {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .address__invitation {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .address__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .address__address-city {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 15px;
+  }
+}
+
 @media (min-width: @desktop) {
   .address {
     align-items: center;
     position: absolute;
     width: 570px;
-    height: 201px;
+    top: 80px;
+    padding-left: 70px;
+    padding-right: 70px;
     background-color: var(--basic-grey);
   }
 }

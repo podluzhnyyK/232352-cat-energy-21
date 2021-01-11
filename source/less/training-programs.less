@@ -6,6 +6,9 @@
 .training-programs__item {
   background-color: var(--basic-grey);
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 
   &:first-child {
     background-image: url("../img/cat-back.svg");
@@ -28,12 +31,29 @@
   padding-left: 70px;
 }
 
+.training-programs__text {
+  border-bottom: 1px solid var(--special-grey-3);
+  padding-bottom: 23px;
+}
+
 .training-programs__link {
   color: var(--basic-black);
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-right: 50px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 24px;
+    height: 12px;
+    right: 0;
+    top: 25%;
+    background-image: url("../img/icon_arrow.svg");
+  }
 }
 
 @media (min-width: @tablet) {
@@ -43,8 +63,25 @@
 
   .training-programs__item {
     margin-bottom: 30px;
-    padding-right: 245px;
+    padding-left: 52px;
+    padding-right: 275px;
+    padding-top: 77px;
+    padding-bottom: 53px;
     background-position: 639px 19px;
+  }
+
+  .training-programs__head-text {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .training-programs__text {
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -60,5 +97,14 @@
     max-width: 570px;
     padding-right: 45px;
     background-position: 1px 1px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 80px;
+    }
+  }
+
+  .training-programs__head-text {
+    margin-bottom: 73px;
+    text-align: center;
   }
 }
