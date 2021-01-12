@@ -16,4 +16,11 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+  overflow-x: hidden;
+}
+
+@media (min-width: @desktop) {
+  .page__body {
+    grid-template-rows: 1fr min-content;
+  }
 }

@@ -1,3 +1,8 @@
+.show-more__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .show-more__big-text {
   color: var(--special-dark-grey-3);
   font-family: "Oswald", "Arial", sans-serif;
@@ -18,4 +23,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .show-more__wrapper {
+    width: auto;
+    margin: 0;
+  }
 }

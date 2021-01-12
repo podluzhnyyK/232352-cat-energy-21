@@ -39,7 +39,7 @@
       <section class="form">
         <form method="get" action="https://echo.htmlacademy.ru">
           <div class="form__fieldset-desktop form__wrapper">
-            <fieldset class="form__fieldset form__fieldset--thin-frame">
+            <div class="form__fieldset form__fieldset--thin-frame">
               <div class="form__line">
                 <label class="form__label" for="name">Имя:*</label>
                 <input class="form__input" type="text" name="name" id="name"/>
@@ -52,9 +52,9 @@
                 <label class="form__label" for="age">Возраст (лет):</label>
                 <input class="form__input" type="text" name="age" id="age"/>
               </div>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--thin-frame">
-              <ul class="form__list">
+            </div>
+            <div class="form__fieldset form__fieldset--thin-frame">
+              <ul class="form__list form__list-border">
                 <li>
                   <input class="form__radio" type="radio" id="weight-loss" value="weight-loss" name="product-groups"
                 checked />
@@ -69,9 +69,9 @@
                   <label class="form__label form__label--radio" for="not-know">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="form__fieldset">
+          <div class="form__fieldset">
             <div class="form__wrapper">
               <legend class="form__legend">Контактные данные<br class="form__crutch"> (владельца кота)</legend>
               <div class="form__line-desktop">
@@ -85,16 +85,16 @@
                 </div>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
+          </div>
+          <div class="form__fieldset">
             <div class="form__wrapper">
               <legend class="form__legend">Комментарий</legend>
               <textarea class="form__textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
-          </fieldset>
-          <fieldset class="form__fieldset">
+          </div>
+          <div class="form__fieldset">
             <div class="form__wrapper form__column">
-              <legend class="form__legend">Комментарий</legend>
+              <legend class="form__legend">Дополнительно</legend>
               <ul class="form__list form__list--checkbox">
                 <li class="form__list-item">
                   <input class="form__checkbox" type="checkbox" id="sugar" value="sugar" name="product-groups" checked />
@@ -114,7 +114,7 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
+          </div>
           <div class="form__wrapper form__button-box">
             <button class="form__button" name="submit">Отправить заявку</button>
             <p class="form__text-button">* — Обязательные поля</p>
