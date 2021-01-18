@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.page-heading__form-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .page-heading__heading {
   color: var(--basic-black);
   font-family: "Oswald", "Arial", sans-serif;
@@ -17,16 +22,36 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-top: 40px;
 }
 
 @media (min-width: @tablet) {
   .page-heading__wrapper {
     width: 708px;
   }
+
+  .page-heading__form-wrapper {
+    width: 627px;
+  }
+
+  .page-heading__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding-top: 45px;
+  }
 }
 
 @media (min-width: @desktop) {
+  .page-heading {
+    margin-top: 143px;
+  }
+
   .page-heading__wrapper {
+    width: 1220px;
+  }
+
+  .page-heading__form-wrapper {
     width: 1220px;
   }
 }

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .address__invitation {
@@ -19,8 +21,10 @@
 
 @media (min-width: @tablet) {
   .address {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 47px;
+    padding-bottom: 41px;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 
   .address__invitation {
@@ -31,12 +35,13 @@
   .address__address {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 
   .address__address-city {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 15px;
+    margin-top: 21px;
   }
 }
 
@@ -45,9 +50,14 @@
     align-items: center;
     position: absolute;
     width: 570px;
-    top: 80px;
-    padding-left: 70px;
-    padding-right: 70px;
+    top: 94px;
+    padding-left: 76px;
+    padding-right: 86px;
     background-color: var(--basic-grey);
+    box-sizing: border-box;
+  }
+
+  .address__address {
+    text-align: left;
   }
 }

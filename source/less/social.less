@@ -13,10 +13,11 @@
   justify-content: space-around;
   margin: 0;
   padding: 0 55px;
+  padding-top: 8px;
   list-style: none;
-  margin-top: 32px;
-  margin-bottom: 22px;
-  min-height: 63px;
+  margin-top: 27px;
+  margin-bottom: 19px;
+  min-height: 54px;
   border-top: 1px solid var(--special-grey-3);
   border-bottom: 1px solid var(--special-grey-3);
 }
@@ -40,14 +41,41 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
   }
 
   .social__icon-list {
     border: none;
-    min-width: 135px;
+    min-width: 160px;
+    padding-left: 74px;
+    min-height: 35px;
+    margin-top: 16px;
+  }
+
+  .social__icon {
+    &--vk {
+      width: 30px;
+      height: 22px;
+    }
+
+    &--inst {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--f {
+      width: 28px;
+      height: 33px;
+    }
   }
 
   .social__html-text {
     margin-right: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .social {
+    padding-top: 34px;
   }
 }

@@ -1,9 +1,45 @@
+.slider {
+  padding-top: 51px;
+}
+
+.slider__img {
+  margin-bottom: 28px;
+}
+
 .slider__img-was,
 .slider__img-became {
   width: 280px;
 }
 
-.slider__img-was img,
-.slider__img-became img {
+.slider__img-became {
+  display: none;
+}
+
+.slider__img-cat {
   width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet) {
+  .slider__img {
+    margin-bottom: 5px;
+  }
+
+  .slider__img-was,
+  .slider__img-became {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider {
+    padding-top: 0;
+  }
+
+  .slider__img {
+    width: 620px;
+    position: relative;
+    left: -22px;
+    top: -16px;
+  }
 }

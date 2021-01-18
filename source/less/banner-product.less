@@ -4,21 +4,25 @@
   &::before {
     content: "";
     width: 100vw;
-    height: 65%;
+    height: 63%;
     left: 0;
     top: 0;
     position: absolute;
     background-color: rgba(104, 183, 56, 0.85);
-    background-image: url(../img/index-background-desktop-2.jpg);
+    background-image: url(../img/index-background.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/index-background-2x.jpg);
+    }
   }
 
   &::after {
     content: "";
     width: 100vw;
-    height: 65%;
+    height: 63%;
     left: 0;
     top: 0;
     position: absolute;
@@ -60,11 +64,15 @@
   position: relative;
   z-index: 2;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .banner-product__img {
+  display: block;
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+  margin-bottom: 3px;
 }
 
 .banner-product__button {
@@ -82,6 +90,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    background-color: var(--basic-green-2);
+  }
+
+  &:active {
+    color: var(--basic-white-0-3);
+  }
 }
 
 @media (min-width: @tablet) {
@@ -99,6 +115,7 @@
     background-image: none;
     width: 708px;
     min-height: 245px;
+    padding-top: 48px;
   }
 
   .banner-product__img {
@@ -110,8 +127,11 @@
     width: 244px;
     margin: 0;
     position: absolute;
-    top: 255px;
-    left: 87px;
+    top: 277px;
+    left: 82px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .banner-product__heading {
@@ -120,6 +140,7 @@
     line-height: 60px;
     text-align: left;
     padding-left: 87px;
+    width: 575px;
   }
 
   .banner-product__slogan {
@@ -128,6 +149,7 @@
     line-height: 20px;
     text-align: left;
     padding-left: 87px;
+    margin-bottom: 20px;
   }
 }
 
@@ -143,10 +165,14 @@
       top: 0;
       position: absolute;
       background-color: rgba(104, 183, 56, 0.85);
-      background-image: url(../img/index-background-desktop-2.jpg);
+      background-image: url(../img/index-background-desktop.jpg);
       background-repeat: no-repeat;
       background-size: 100% auto;
       z-index: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url(../img/index-background-desktop-2x.jpg);
+      }
     }
 
     &::after {
@@ -165,15 +191,32 @@
 
   .banner-product__content {
     display: block;
-    min-height: 694px;
+    min-height: 471px;
     max-width: 1440px;
     width: 1440px;
     margin: 0 auto;
+    padding-top: 223px;
+  }
+
+  .banner-product__heading {
+    padding-left: 190px;
+  }
+
+  .banner-product__slogan {
+    padding-left: 190px;
   }
 
   .banner-product__button {
     position: absolute;
-    top: 259px;
-    left: 80px;
+    top: 455px;
+    left: 190px;
+  }
+
+  .banner-product__img {
+    position: absolute;
+    width: 552px;
+    height: auto;
+    left: 39%;
+    top: 20%;
   }
 }
