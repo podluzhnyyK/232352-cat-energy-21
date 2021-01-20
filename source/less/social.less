@@ -12,11 +12,11 @@
   align-items: center;
   justify-content: space-around;
   margin: 0;
-  padding: 0 55px;
+  padding: 0 59px;
   padding-top: 8px;
   list-style: none;
   margin-top: 27px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
   min-height: 54px;
   border-top: 1px solid var(--special-grey-3);
   border-bottom: 1px solid var(--special-grey-3);
@@ -24,6 +24,20 @@
 
 .social__icon-item {
   font-size: 0;
+}
+
+.social__icon {
+  &:hover {
+    .social__icon-use {
+      fill: var(--basic-green);
+    }
+  }
+
+  &:active {
+    .social__icon-use {
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__html-academy {
@@ -36,6 +50,20 @@
   font-size: 16px;
 }
 
+.social__html-icon {
+  &:hover {
+    .social__html-icon-use {
+      fill: var(--basic-green);
+    }
+  }
+
+  &:active {
+    .social__html-icon-use {
+      opacity: 0.3;
+    }
+  }
+}
+
 @media (min-width: @tablet) {
   .social {
     flex-direction: row;
@@ -46,8 +74,8 @@
 
   .social__icon-list {
     border: none;
-    min-width: 160px;
-    padding-left: 74px;
+    min-width: 155px;
+    padding-left: 86px;
     min-height: 35px;
     margin-top: 16px;
   }
@@ -70,7 +98,7 @@
   }
 
   .social__html-text {
-    margin-right: 20px;
+    margin-right: 24px;
   }
 }
 

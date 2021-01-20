@@ -1,5 +1,5 @@
 .slider {
-  padding-top: 51px;
+  padding-top: 28px;
 }
 
 .slider__img {
@@ -16,13 +16,23 @@
 }
 
 .slider__img-cat {
-  width: 100%;
-  height: auto;
+  width: 103%;
+  height: 232px;
 }
 
 @media (min-width: @tablet) {
+  .slider {
+    padding-top: 53px;
+    padding-left: 15px;
+  }
+
   .slider__img {
-    margin-bottom: 5px;
+    margin-bottom: 18px;
+  }
+
+  .slider__img-cat {
+    width: 100%;
+    height: auto;
   }
 
   .slider__img-was,
@@ -34,11 +44,13 @@
 @media (min-width: @desktop) {
   .slider {
     padding-top: 0;
+    padding-left: 0;
   }
 
   .slider__img {
     width: 620px;
     position: relative;
+    margin-bottom: 29px;
     left: -22px;
     top: -16px;
   }

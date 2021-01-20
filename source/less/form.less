@@ -104,7 +104,7 @@
   }
 }
 
-.form__label--email {
+.form__label-email {
   position: relative;
 
   &::before {
@@ -119,7 +119,7 @@
   }
 }
 
-.form__input--phone {
+.form__input-phone {
   position: relative;
 
   &::before {
@@ -472,6 +472,7 @@
     justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
+    padding-top: 43px;
   }
 
   .form__fieldset--thin-frame {
@@ -481,24 +482,36 @@
   .form__line-desktop {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 47px;
+    padding-top: 39px;
   }
 
-  .form__label--email,
-  .form__input--phone {
+  .form__label-email {
     width: 47%;
+
+    &::before {
+      top: 15px;
+      right: 21px;
+    }
+  }
+
+  .form__input-phone {
+    width: 47%;
+
+    &::before {
+      right: 16px;
+      top: 12px;
+    }
   }
 
   .form__list-item {
     width: auto;
   }
 
-  .form__line-desktop {
-    margin-bottom: 45px;
-  }
-
   .form__list--checkbox {
     justify-content: space-between;
     margin-bottom: 26px;
+    padding-top: 28px;
   }
 
   .form__list-item:nth-child(2n + 1),
@@ -512,6 +525,6 @@
   }
 
   .form__button-box {
-    margin-bottom: 83px;
+    margin-bottom: 80px;
   }
 }

@@ -1,3 +1,12 @@
+.page-header__nav {
+  border-bottom: 1px solid var(--special-grey-4);
+  margin-bottom: -1px;
+}
+
+.page-header__nav--border-none {
+  border-bottom: none;
+}
+
 .page-header__nav-logo {
   display: flex;
   justify-content: space-between;
@@ -50,10 +59,18 @@
 
 .page-header__nav-menu {
   text-align: center;
+}
+
+.page-header__nav-menu--hide {
   display: none;
 }
 
 @media (min-width: @tablet) {
+  .page-header__nav {
+    border-bottom: none;
+    margin-bottom: 0px;
+  }
+
   .page-header__wrapper {
     width: 708px;
     margin: 0 auto;
