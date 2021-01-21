@@ -52,8 +52,14 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-right: 39px;
+  padding-right: 52px;
   position: relative;
+
+  &:hover {
+    &::before {
+      background-image: url("../img/group-hover.svg");
+    }
+  }
 
   &:active {
     opacity: 0.3;
@@ -62,11 +68,12 @@
   &::before {
     position: absolute;
     content: " ";
-    width: 24px;
+    width: 35px;
     height: 12px;
-    right: 0;
+    left: 99px;
     top: 25%;
     background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -119,6 +126,10 @@
     font-size: 20px;
     line-height: 30px;
     padding-right: 50px;
+
+    &::before {
+      left: 133px;
+    }
   }
 }
 
