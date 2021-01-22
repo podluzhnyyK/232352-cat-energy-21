@@ -70,7 +70,6 @@
 }
 
 .catalog-more__button {
-  display: block;
   color: var(--basic-white);
   background-color: var(--basic-green);
   font-family: "Oswald", "Arial", sans-serif;
@@ -83,6 +82,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--basic-green-2);
@@ -128,7 +128,7 @@
     padding-left: 36px;
 
     &::before {
-      left: 0px;
+      left: 0;
       width: 110%;
     }
 
@@ -144,15 +144,6 @@
     padding-left: 39px;
     padding-right: 39px;
     margin-bottom: 25px;
-  }
-
-  .catalog-more__text-box {
-    display: flex;
-    align-items: center;
-  }
-
-  .catalog-more__product-name {
-    flex-grow: 1;
   }
 
   .catalog-more__product-name {

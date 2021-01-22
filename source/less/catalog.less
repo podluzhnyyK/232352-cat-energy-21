@@ -97,6 +97,7 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: -1;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--basic-green-2);
@@ -124,11 +125,10 @@
     max-width: 324px;
     box-sizing: border-box;
     margin: 0;
-    background: linear-gradient(
-      0deg,
-      var(--background_grey) 76%,
-      var(--basic-white) 76%
-    );
+    background-color: transparent;
+    background-image: url("../img/bg-catalog.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
   }
 
   .catalog__wrapper {
@@ -153,7 +153,6 @@
   }
 
   .catalog__img-box {
-    margin-bottom: 24px;
     height: 211px;
     padding-top: 0;
     margin-bottom: 19px;
