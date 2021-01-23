@@ -1,12 +1,66 @@
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 .address__invitation {
   color: var(--special-dark-grey-3);
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 165px;
 }
 
 .address__address {
   font-size: 14px;
   line-height: 20px;
+  width: 165px;
+}
+
+@media (min-width: @tablet) {
+  .address {
+    padding-top: 47px;
+    padding-bottom: 41px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  .address__invitation {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  .address__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .address__address-city {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 21px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .address {
+    align-items: center;
+    position: absolute;
+    width: 570px;
+    top: 94px;
+    padding-left: 76px;
+    padding-right: 86px;
+    background-color: var(--basic-grey);
+    box-sizing: border-box;
+  }
+
+  .address__address {
+    text-align: left;
+    width: 158px;
+  }
 }

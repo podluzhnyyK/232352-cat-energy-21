@@ -1,0 +1,57 @@
+.slider {
+  padding-top: 28px;
+}
+
+.slider__img {
+  margin-bottom: 28px;
+}
+
+.slider__img-was,
+.slider__img-became {
+  width: 280px;
+}
+
+.slider__img-became {
+  display: none;
+}
+
+.slider__img-cat {
+  width: 103%;
+  height: 232px;
+}
+
+@media (min-width: @tablet) {
+  .slider {
+    padding-top: 53px;
+    padding-left: 15px;
+  }
+
+  .slider__img {
+    margin-bottom: 18px;
+  }
+
+  .slider__img-cat {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider__img-was,
+  .slider__img-became {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider {
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .slider__img {
+    width: 620px;
+    position: relative;
+    margin-bottom: 29px;
+    left: -22px;
+    top: -16px;
+  }
+}

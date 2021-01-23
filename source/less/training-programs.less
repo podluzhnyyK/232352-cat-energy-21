@@ -1,14 +1,31 @@
+.training-programs {
+  padding-top: 22px;
+  margin-bottom: 27px;
+}
+
+.training-programs__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .training-programs__item {
   background-color: var(--basic-grey);
+  margin-bottom: 20px;
+  padding-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 
   &:first-child {
     background-image: url("../img/cat-back.svg");
     background-repeat: no-repeat;
+    background-position: 22px 21px;
   }
 
   &:last-child {
     background-image: url("../img/cat-back-2.svg");
     background-repeat: no-repeat;
+    background-position: 13px 23px;
   }
 }
 
@@ -20,6 +37,13 @@
   font-weight: 400;
   text-transform: uppercase;
   padding-left: 70px;
+  margin-bottom: 29px;
+}
+
+.training-programs__text {
+  border-bottom: 1px solid var(--special-grey-3);
+  padding-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .training-programs__link {
@@ -28,4 +52,124 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-right: 52px;
+  position: relative;
+
+  &:hover {
+    &::before {
+      background-image: url("../img/group-hover.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 35px;
+    height: 12px;
+    left: 99px;
+    top: 25%;
+    background-image: url("../img/icon_arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet) {
+  .training-programs {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .training-programs__wrapper {
+    width: 708px;
+  }
+
+  .training-programs__item {
+    margin-bottom: 30px;
+    padding-left: 52px;
+    padding-right: 275px;
+    padding-top: 75px;
+    padding-bottom: 58px;
+    background-position: 639px 19px;
+  }
+
+  .training-programs__item:first-child {
+    background-position: 446px 78px;
+    background-size: 200px 211px;
+  }
+
+  .training-programs__item:last-child {
+    padding-right: 313px;
+    background-position: 410px 90px;
+    background-size: 268px 200px;
+  }
+
+  .training-programs__head-text {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .training-programs__text {
+    border-bottom: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 29px;
+  }
+
+  .training-programs__link {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 50px;
+
+    &::before {
+      left: 133px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .training-programs {
+    padding-top: 82px;
+  }
+
+  .training-programs__wrapper {
+    width: 1220px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .training-programs__item {
+    max-width: 570px;
+    box-sizing: border-box;
+    padding-right: 45px;
+    background-position: 1px 1px;
+
+    &:first-child {
+      background-position: 52px 41px;
+      background-size: 100px 106px;
+      margin-right: 80px;
+    }
+
+    &:last-child {
+      padding-right: 45px;
+      background-position: 32px 47px;
+      background-size: 134px 100px;
+    }
+  }
+
+  .training-programs__head-text {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
+
+  .training-programs__text {
+    margin-bottom: 7px;
+  }
 }

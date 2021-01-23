@@ -1,0 +1,32 @@
+.logo-icon__image {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+@media (min-width: @tablet) {
+  .logo-icon {
+    margin-right: 12px;
+  }
+
+  .logo-icon__image {
+    width: 174px;
+    height: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .logo-icon {
+    margin-top: 13px;
+  }
+
+  .logo-icon__image {
+    width: 202px;
+  }
+}
