@@ -55,10 +55,10 @@
   &:focus {
     border: 1px solid var(--special-dark-grey);
   }
+}
 
-  &:invalid {
-    border: 2px solid var(--status-error);
-  }
+.form-invalid {
+  border: 2px solid var(--status-error);
 }
 
 .form__textarea {
@@ -156,15 +156,25 @@
 .form__radio,
 .form__checkbox {
   display: none;
+}
 
-  &:disabled {
-    .form__label--radio {
-      color: var(--special-grey-5);
+.form__radio[disabled] + .form__label--radio {
+  color: var(--special-grey-5);
 
-      &::before {
-        border-color: var(--special-grey-5);
-      }
-    }
+  &::before {
+    border-color: var(--special-grey-5);
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.form__checkbox[disabled] + .form__label--checkbox {
+  color: var(--special-grey-5);
+
+  &::before {
+    border-color: var(--special-grey-5);
   }
 }
 
@@ -251,6 +261,20 @@
     height: 15px;
     left: 7px;
     top: 3px;
+  }
+}
+
+.form__checkbox[disabled]:checked + .form__label--checkbox {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 33px;
+    left: 7px;
+    top: 0px;
   }
 }
 
